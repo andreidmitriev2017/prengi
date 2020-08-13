@@ -6,8 +6,7 @@
         url('Roboto-Bold.woff2') format('woff2'),
         url('Roboto-Bold.woff') format('woff'),
         url('Roboto-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+    font-weight: 700;
 }
 
 @font-face {
@@ -19,7 +18,6 @@
         url('Roboto-Black.woff') format('woff'),
         url('Roboto-Black.ttf') format('truetype');
     font-weight: 900;
-    font-style: normal;
 }
 
 @font-face {
@@ -31,6 +29,5 @@
         url('Roboto-Light.woff') format('woff'),
         url('Roboto-Light.ttf') format('truetype');
     font-weight: 300;
-    font-style: normal;
 }
 
