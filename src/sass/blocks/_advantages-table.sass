@@ -1,0 +1,27 @@
+.advantages-table
+    min-height: 1334px
+    padding: 80px 0
+    &__wrapper
+        margin-top: 44px 
+    &__item
+        height: 355px
+        display: flex
+        align-items: center
+        padding: 0
+        @for $i from 1 through 6
+            &_it-#{$i}
+                background: url(../img/advantage-table/at-#{$i}.jpg) center center/cover no-repeat
+    &__content
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 100%
+        min-height: 156px
+        background-color: rgba(0,0,0,.44)
+    &__text
+        width: 332px
+        text-align: center
+        color: #ffffff
+        font-size: 23px
+        font-weight: 400
+        line-height: 26px

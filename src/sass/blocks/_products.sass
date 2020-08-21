@@ -1,0 +1,29 @@
+.products
+    min-height: 889px
+    padding: 79px 0 61px
+    background: url(../img/bg-products.jpg) center center/cover no-repeat
+    &__menu
+        padding: 0
+        max-width: 840px
+        height: 65px
+        border: 1px solid #ffffff
+        border-radius: 5px
+        margin: 25px auto 35px
+        list-style: none
+        display: flex
+        align-items: center
+    &__item
+        padding: 0 27px
+        display: flex
+        align-items: center
+        height: 49px
+        color: #fff
+        font-size: 14px
+        font-weight: 400
+        line-height: 14px
+        border-right: 1px solid #fff
+        cursor: pointer
+        &:last-child
+            border-right: none
+        &_active
+            color: $main
