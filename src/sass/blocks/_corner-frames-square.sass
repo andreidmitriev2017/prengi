@@ -1,0 +1,44 @@
+.corner-frames-square
+    width: 302px
+    min-height: 302px
+    margin: 0 auto
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    &__border
+        position: absolute
+        width: 40px
+        min-height: 40px
+        border: 1px solid $main
+        &_tl
+            top: 0
+            left: 0
+            border-right: none
+            border-bottom: none
+            border-top-left-radius: 5px
+        &_tr
+            top: 0
+            right: 0
+            border-left: none
+            border-bottom: none
+            border-top-right-radius: 5px
+        &_bl
+            bottom: 0
+            left: 0
+            border-right: none
+            border-top: none
+            border-bottom-left-radius: 5px
+        &_br
+            bottom: 0
+            right: 0
+            border-left: none
+            border-top: none
+            border-bottom-right-radius: 5px
+    &__icon
+        max-width: 240px
+
+
+
+
+    
