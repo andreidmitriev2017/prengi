@@ -1,0 +1,107 @@
+@media (max-width: 1200px)
+    .footer
+        &__item
+            margin-right: 15px
+            &:last-child
+                margin-right: 0
+        &__line
+            width: 930px
+        &__descr
+            font-size: 14px
+        &__title
+            font-size: 16px
+            line-height: 16px
+        &__link
+            font-size: 14px
+            line-height: 20px
+        &__logo
+            max-width: 150px
+
+@media (max-width: 991px)
+    .footer
+        min-height: 460px
+        padding: 40px 0 30px
+        &__list
+            margin-top: 10px
+        &__item
+            &_company
+                max-width: 220px
+        &__line
+            width: 700px
+            margin: 30px auto 0
+        &__descr
+            font-size: 12px
+        &__title
+            font-size: 14px
+            line-height: 14px
+        &__link
+            font-size: 12px
+            line-height: 18px
+        &__logo
+            margin-top: 10px
+            max-width: 150px 
+        &__address
+            margin: 30px auto 0
+            font-size: 11px
+            line-height: 11px
+
+@media (max-width: 767px)
+    .footer
+        &__wrapper
+            width: 80%
+            margin: 0 auto
+            flex-wrap: wrap
+            justify-content: space-between
+            .fl
+                display: flex
+                &:nth-child(1)
+                    width: 100%
+                &:nth-child(2)
+                    width: 50%
+                &:nth-child(3)
+                    width: 50%
+                    justify-content: center
+                &:nth-child(4)
+                    width: 50%
+        &__item
+            margin-right: 0px
+            &_company
+                max-width: 420px
+            &_modules
+                margin-top: 20px
+                max-width: 210px
+            &_departments
+                margin-top: 20px
+                max-width: 210px
+            &_about
+                margin-top: 20px
+                max-width: 210px
+        &__line
+            width: 500px
+
+@media (max-width: 575px)
+    .footer
+        &__wrapper
+            .fl
+                &:nth-child(2)
+                    width: 100%
+                &:nth-child(3)
+                    width: 100%
+                    justify-content: flex-start
+                &:nth-child(4)
+                    width: 100%
+        &__item
+            margin-right: 0px
+            &_company
+                max-width: 420px
+            &_modules
+                margin-top: 20px
+                max-width: 210px
+            &_departments
+                margin-top: 20px
+                max-width: 210px
+            &_about
+                margin-top: 20px
+                max-width: 210px
+        &__line
+            width: 280px

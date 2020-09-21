@@ -7,13 +7,13 @@
         justify-content: space-between
     &__item
         &_company
-            width: 377px
+            max-width: 377px
         &_modules
-            width: 264px
+            max-width: 264px
         &_departments
-            width: 117px
+            max-width: 117px
         &_about
-            width: 112px
+            max-width: 112px
     &__title
         font-size: 16px
         line-height: 16px
@@ -22,6 +22,7 @@
     &__logo
         display: block
         margin-top: 20px
+        max-width: 177px
     &__descr
         margin-top: 20px
         color: #ffffff
@@ -36,10 +37,14 @@
         &:hover
             color: #ffffff
             text-decoration: none
+        &_mtn
+            margin-top: 0
     &__list
+        margin-top: 20px
         padding: 0
         list-style-type: none
     &__line
+        max-width: 100%
         width: 1171px
         height: 1px
         background-color: rgba(0,194,240,.3)
@@ -52,3 +57,4 @@
         line-height: 13px
         font-weight: 300
         color: #ffffff
+        text-align: center
