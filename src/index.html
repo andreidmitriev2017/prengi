@@ -103,7 +103,7 @@
                 </div>
                 <div class="row promo__row">
                     <div class="promo__btn-wrapper col-10 col-sm-4 col-lg-3">
-                        <button class="button promo__btn">Получить доступ</button>
+                        <button data-modal="consultation" class="button promo__btn">Получить доступ</button>
                     </div>
                 </div>
             </div>
@@ -290,7 +290,7 @@
             </div>
             <div class="row">
                 <div class="col-6 offset-3 col-sm-4 offset-sm-4">
-                    <button class="button button_border">cвязаться с нами</button>
+                    <button data-modal="consultation" class="button button_border">cвязаться с нами</button>
                 </div>
             </div>
         </div>
@@ -355,9 +355,23 @@
         <div class="footer__line"></div>
         <address class="footer__address">© Prengi Ink. 2008-2017 Все права защищены.</address>
     </footer>
+    <div class="background">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__title">Оставьте заявку <br> и получите доступ:</div>
+            <form class="modal__form" action="#" method="POST">
+                <input type="text" class="modal__input modal__input_mtn" name="name" placeholder="Ваше имя">
+                <input type="tel" class="modal__input" name="phone" placeholder="Ваш телефон">
+                <input type="email" class="modal__input" name="email" placeholder="Ваш e-mail">
+                <button class="button button_border button_form">Получить доступ</button>
+            </div>
+        </div>
+    </div>
     <a href="#up" class="page-up"><img src="icons/chevron-circle-up-solid.svg" alt="up" class="page-up__img"></a>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>

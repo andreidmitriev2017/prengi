@@ -11,7 +11,12 @@ $(document).ready(function(){
             }
         }]
     });
-
+    $('[data-modal=consultation]').on('click', function(){
+        $('.background,#consultation').fadeIn('slow');
+    });
+    $('.modal__close').on('click', function(){
+        $('.background,#consultation').fadeOut('slow');
+    });
     $('ul.products__menu').on('click', 'li:not(.products__item_active)', function() {
         $(this)
           .addClass('products__item_active').siblings().removeClass('products__item_active')
@@ -53,6 +58,36 @@ $(document).ready(function(){
             menu.classList.toggle('header__wrapper_active');
         });
     });
+    
+    function validateForms(form){
+        $(form).validate({
+            rules:{
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                },
+            },
+            messages: {
+                name: {
+                    required: "Пожалуйста, введите своё имя",
+                    minlength: jQuery.validator.format("Введите {0} символа!")
+                },
+                phone: "Пожалуйста, введите свой номер телефона",
+                email: {
+                  required: "Пожалуйста, введите свой e-mail",
+                  email: "Неправильно введен адрес почты"
+                }
+            }
+        }); 
+    };
 
+    validateForms('#consultation form');
+
+    $('input[name="phone"]').mask('+7 (999) 999-99-99');
     new WOW().init();
 });

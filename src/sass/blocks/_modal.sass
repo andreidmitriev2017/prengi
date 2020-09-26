@@ -1,0 +1,42 @@
+.modal
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 355px;
+    min-height: 342px
+    padding: 37px 50px 52px
+    background-color: #fff
+    border-radius: 15px
+    &__form
+        margin-top: 15px
+    &__close
+        color: $main
+        position: absolute
+        top: 0
+        right: -40px
+        font-size: 41px
+        line-height: 21px
+        cursor: pointer
+    &__title
+        font-size: 16px
+        line-height: 21px
+        font-weight: 700
+        text-align: center
+        width: 200px
+        margin: 0 auto
+    &__input
+        height: 50px
+        font-size: 14px
+        font-weight: 400
+        padding: 0px 10px
+        width: 100%
+        border-radius: 5px
+        border: 1px solid #b3b3b3
+        margin-top: 10px
+        transition: 1s
+        &_mtn
+            margin-top: 0
+        &:focus
+            border: 1px solid $main
+            outline: none
